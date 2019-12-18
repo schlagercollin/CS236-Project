@@ -22,6 +22,17 @@ models: a bassline model that is trained first and provides rich encodings, and 
 model that conditions generation upon those rich encodings. We also present a
 novel encoding scheme for representing polyphonic music.
 
+## Listening to Samples
+
+Click to listen to some samples on YouTube:
+
+[![Alt text](https://img.youtube.com/vi/fK663svxZkQ/0.jpg)](https://www.youtube.com/watch?v=fK663svxZkQ&feature=youtu.be)
+
+Check out the `./generated_samples/examples` directory for a small collection of samples.
+
+<img src="https://raw.githubusercontent.com/gdrtodd/CS236-Project/master/figures/conditional_cross_track_midi.png" alt="sample_midi" width="50%"/>
+
+
 ## Model Architecture and Encoding
 
 <img src="https://github.com/gdrtodd/CS236-Project/blob/master/figures/model_diagram.png?raw=true" alt="model_diagram" width="50%"/>
@@ -38,13 +49,6 @@ An example MIDI track with its corresponding tuple encodings. Each note is assig
 (pitch, duration, advance) value. Polyphony is achieved by having the advance value less than
 the duration value. Notice the teal and yellow notes start simultaneously due to the teal note having
 an advance value of zero.
-
-
-## Listening to Samples
-
-<img src="https://raw.githubusercontent.com/gdrtodd/CS236-Project/master/figures/conditional_cross_track_midi.png" alt="sample_midi" width="50%"/>
-
-Check out the `./generated_samples/examples` directory for a small collection of samples.
 
 ## Generating Samples from Pre-trained Models
 
